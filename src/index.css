@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+:root {
+  --bg: #132434;
+
+  --text-primary: #92b7cc;
+  --text-secondary: #267dbd;
+  --text-tertiary: #3384a0;
+
+  --button-add: #00ff40;
+  --button-primary: #92b7cc;
+  --button-secondary: #3893b1;
+  --button-remove: tomato;
+
+  --icon-primary: #3893b1;
+  --icon-secondary: #013876;
+  --list-item: #267ebd;
+
+  --list-item-hover: #22374a;
+}
+
+#root {
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  color: var(--text-primary);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--list-item-hover);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--text-primary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
