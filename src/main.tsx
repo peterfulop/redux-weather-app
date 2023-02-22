@@ -7,7 +7,7 @@ import { store } from './state';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename='/redux-weather-app/'>
       <App />
     </BrowserRouter>
   </Provider>
