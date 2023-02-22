@@ -62,7 +62,6 @@ export const useGetWeatherData = () => {
       .finally(() => {
         setLoading(false);
       });
-    // }
   };
 
   return { weather, error, loading, fetchData, setError };
